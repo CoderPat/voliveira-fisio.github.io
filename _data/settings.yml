@@ -27,8 +27,8 @@ email: ""
 # Formato recomendado: JPG ou WebP, cerca de 1600 px no lado maior.
 
 images:
-  # ✏️ PREENCHER — retrato (topo da página inicial e página Sobre Mim). Vertical.
-  portrait: ""
+  # Retrato (topo da página inicial e página Sobre Mim). Vertical.
+  portrait: "profile.jpg"
   # ✏️ PREENCHER — terapia manual (página inicial e Abordagem Clínica).
   manual_therapy: ""
   # ✏️ PREENCHER — exercício terapêutico (Abordagem Clínica).
