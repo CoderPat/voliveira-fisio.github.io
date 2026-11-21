@@ -1,0 +1,34 @@
+---
+layout: null
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{%- assign page_ids = "home,about,areas,approach,contact,privacy" | split: "," -%}
+{%- assign langs = "pt,en" | split: "," -%}
+{%- for id in page_ids -%}
+{%- assign route = site.data.routes[id] -%}
+{%- for code in langs %}
+  <url>
+    <loc>{{ route[code] | absolute_url }}</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="{{ route.pt | absolute_url }}"/>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ route.en | absolute_url }}"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ route.pt | absolute_url }}"/>
+  </url>
+{%- endfor -%}
+{%- endfor -%}
+{%- comment %} Articles are listed only once something is published in that language. {% endcomment -%}
+{%- for code in langs -%}
+{%- assign docs = site.articles | where: "lang", code -%}
+{%- if docs.size > 0 %}
+  <url>
+    <loc>{{ site.data.routes.articles[code] | absolute_url }}</loc>
+  </url>
+{%- for doc in docs %}
+  <url>
+    <loc>{{ doc.url | absolute_url }}</loc>
+  </url>
+{%- endfor -%}
+{%- endif -%}
+{%- endfor %}
+</urlset>

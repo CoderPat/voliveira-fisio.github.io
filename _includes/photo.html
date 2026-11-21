@@ -1,0 +1,23 @@
+{%- comment -%}
+  One photo slot. Shows the file named in _data/settings.yml (images.<slot>),
+  or a neutral placeholder while that field is empty.
+  Params: slot (required), shape (arch | tall | wide | square), eager (true for above-the-fold).
+{%- endcomment -%}
+{%- assign photo_src = site.data.settings.images[include.slot] -%}
+<figure class="photo photo--{{ include.shape | default: 'tall' }}" data-photo-slot="{{ include.slot }}">
+  {%- if photo_src and photo_src != "" %}
+  <img src="{{ photo_src | prepend: '/assets/img/' | relative_url }}" alt="{{ site.data[page.lang].image_alt[include.slot] | escape }}"{% if include.eager %} fetchpriority="high"{% else %} loading="lazy"{% endif %} decoding="async">
+  {%- else %}
+  <svg class="photo__placeholder" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+    <rect width="400" height="500" fill="#EADFCE"/>
+    <circle cx="282" cy="168" r="150" fill="#F2EADD"/>
+    <g fill="none" stroke="#D9C9B2" stroke-width="1">
+      <circle cx="282" cy="168" r="62"/>
+      <circle cx="282" cy="168" r="106"/>
+      <circle cx="282" cy="168" r="150"/>
+    </g>
+    <path d="M-20 392c86-66 176-70 256-14s148 60 204-6v148H-20Z" fill="#DDD2BF"/>
+    <path d="M-20 446c96-50 190-46 270-10s142 40 190 2v82H-20Z" fill="#CBD3C3"/>
+  </svg>
+  {%- endif %}
+</figure>

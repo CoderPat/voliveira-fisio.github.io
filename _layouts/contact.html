@@ -1,0 +1,36 @@
+---
+layout: default
+---
+{%- include vars.html -%}
+<section class="page-hero">
+  <div class="container contact">
+    <div class="contact__text">
+      <p class="eyebrow">{{ t.contact.eyebrow }}</p>
+      <h1>{{ t.contact.title }}</h1>
+      <p class="page-hero__intro">{{ t.contact.text }}</p>
+
+      <div class="contact__whatsapp">
+        <a class="btn btn--primary btn--lg" href="{{ wa_url }}" target="_blank" rel="noopener">{% include icon.html name="whatsapp" %}{{ t.contact.button }}</a>
+        <p class="contact__number"><span>{{ t.contact.whatsapp_label }}</span> {{ s.whatsapp_display }}</p>
+      </div>
+
+      {%- if has_email %}
+      <p class="contact__email">{{ t.contact.email_label }} <a href="mailto:{{ s.email }}">{{ s.email }}</a></p>
+      {%- endif %}
+
+      <p class="note">{% include icon.html name="info" %}<span>{{ t.contact.notice }}</span></p>
+    </div>
+    <div class="contact__media">
+      {% include photo.html slot="detail" shape="tall" eager=true %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--sand" aria-labelledby="locations-title">
+  <div class="container">
+    <header class="section-head">
+      <h2 id="locations-title">{{ t.contact.locations_title }}</h2>
+    </header>
+    {% include locations.html %}
+  </div>
+</section>

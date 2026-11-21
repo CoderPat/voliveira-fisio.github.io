@@ -1,0 +1,87 @@
+# ════════════════════════════════════════════════════════════════════
+#  DEFINIÇÕES DO SITE — contactos, fotografias e campos por preencher
+#
+#  Como editar: altere apenas o que está entre aspas, à direita dos
+#  dois pontos. Um campo com "" está vazio e NÃO aparece no site.
+#  Os campos assinalados com  ✏️ PREENCHER  estão à espera de dados.
+# ════════════════════════════════════════════════════════════════════
+
+
+# ─── CONTACTOS ──────────────────────────────────────────────────────
+
+# Número do WhatsApp: só algarismos, com o indicativo do país (351).
+whatsapp_number: "351966676181"
+
+# O mesmo número, tal como deve aparecer escrito no site.
+whatsapp_display: "+351 966 676 181"
+
+# ✏️ PREENCHER — endereço de email. Enquanto estiver vazio, o email
+# não aparece em nenhuma página.
+email: ""
+
+
+# ─── FOTOGRAFIAS ────────────────────────────────────────────────────
+# 1. Carregue a fotografia para a pasta  assets/img/
+# 2. Escreva aqui o nome exato do ficheiro, por exemplo "retrato.jpg"
+# Enquanto um campo estiver vazio, o site mostra um espaço neutro.
+# Formato recomendado: JPG ou WebP, cerca de 1600 px no lado maior.
+
+images:
+  # ✏️ PREENCHER — retrato (topo da página inicial e página Sobre Mim). Vertical.
+  portrait: ""
+  # ✏️ PREENCHER — terapia manual (página inicial e Abordagem Clínica).
+  manual_therapy: ""
+  # ✏️ PREENCHER — exercício terapêutico (Abordagem Clínica).
+  exercise: ""
+  # ✏️ PREENCHER — avaliação / em consulta (página inicial e Sobre Mim).
+  assessment: ""
+  # ✏️ PREENCHER — pormenor de trabalho (Contactos).
+  detail: ""
+
+
+# ─── PRIMEIRA CONSULTA ──────────────────────────────────────────────
+# Aparecem em "Primeira consulta: o que esperar" (Abordagem Clínica).
+# Preencha em português (pt) e em inglês (en).
+
+first_visit:
+  # ✏️ PREENCHER — duração. Exemplo: pt "Cerca de 60 minutos" / en "About 60 minutes"
+  duration:
+    pt: ""
+    en: ""
+  # ✏️ PREENCHER — preço. Exemplo: pt "00 €" / en "€00"
+  price:
+    pt: ""
+    en: ""
+
+
+# ─── INFORMAÇÃO LEGAL (rodapé) ──────────────────────────────────────
+
+legal:
+  # ✏️ PREENCHER — entidade reguladora e, se aplicável, número de registo.
+  regulator:
+    pt: ""
+    en: ""
+  # Opcional — endereço do Livro de Reclamações Eletrónico, se aplicável.
+  complaints_book_url: ""
+
+
+# ─── GOOGLE ─────────────────────────────────────────────────────────
+
+# Ligação para as avaliações no Google (botão "Ver todas as avaliações").
+google_reviews_url: "https://share.google/wOVhxLzEp3rE7Z21M"
+
+# ✏️ INSERIR WIDGET DE AVALIAÇÕES GOOGLE
+# Cole o código fornecido pelo serviço de widget por baixo da linha que
+# termina em "|", com dois espaços no início de cada linha. Exemplo:
+#
+#   google_reviews_widget: |
+#     <script src="https://..." async></script>
+#     <div class="..."></div>
+#
+# Enquanto estiver vazio, a página mostra apenas o botão para o Google.
+# O widget só é carregado depois de o visitante aceitar os cookies.
+google_reviews_widget: ""
+
+# ✏️ PREENCHER (opcional) — identificador do Google Analytics 4,
+# no formato "G-XXXXXXXXXX". Só é ativado com consentimento do visitante.
+google_analytics_id: ""

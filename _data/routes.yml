@@ -1,0 +1,25 @@
+# Endereços de cada página, por idioma. Têm de coincidir com o `permalink`
+# definido no ficheiro correspondente em pages/pt/ e pages/en/.
+# É a partir daqui que o site constrói o menu, o seletor PT / EN e as tags hreflang.
+
+home:
+  pt: "/"
+  en: "/en/"
+about:
+  pt: "/sobre-mim/"
+  en: "/en/about/"
+areas:
+  pt: "/areas-de-intervencao/"
+  en: "/en/areas-of-care/"
+approach:
+  pt: "/abordagem-clinica/"
+  en: "/en/clinical-approach/"
+contact:
+  pt: "/contactos/"
+  en: "/en/contact/"
+privacy:
+  pt: "/politica-de-privacidade/"
+  en: "/en/privacy-policy/"
+articles:
+  pt: "/artigos/"
+  en: "/en/articles/"

@@ -1,0 +1,22 @@
+{%- include vars.html -%}
+<!doctype html>
+<html lang="{{ t.meta.html_lang }}" class="no-js">
+<head>
+{% include head.html %}
+</head>
+<body class="page-{{ page.page_id }}"{% if has_ga %} data-ga-id="{{ s.google_analytics_id | escape }}"{% endif %}>
+  <a class="skip-link" href="#main">{{ t.ui.skip }}</a>
+  {% include header.html %}
+
+  <main id="main">
+{{ content }}
+  </main>
+
+  {% include footer.html %}
+
+  <a class="wa-fab" href="{{ wa_url }}" target="_blank" rel="noopener" aria-label="{{ t.ui.whatsapp_fab }}">{% include icon.html name="whatsapp" %}</a>
+
+  {% include cookie-banner.html %}
+  <script src="{{ '/assets/js/main.js' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M' }}" defer></script>
+</body>
+</html>

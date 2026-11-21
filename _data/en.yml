@@ -1,0 +1,422 @@
+# ════════════════════════════════════════════════════════════════════
+#  TEXTOS EM INGLÊS
+#
+#  Mesma estrutura de pt.yml. A versão inglesa deve dizer o mesmo que a
+#  portuguesa, sem acrescentar serviços nem qualificações.
+#  Usar sempre "physiotherapist with training in osteopathy" e
+#  "osteopathic techniques". Nunca usar a palavra "osteopath".
+# ════════════════════════════════════════════════════════════════════
+
+meta:
+  html_lang: "en"
+  og_locale: "en_GB"
+  site_name: "Vasco Oliveira — Physiotherapy and Osteopathy"
+
+identity:
+  name: "Vasco Oliveira"
+  tagline: "Physiotherapy and Osteopathy"
+  designation: "Physiotherapist with training in Osteopathy"
+  job_title: "Physiotherapist"
+  license: "Physiotherapy professional licence no. 2240"
+
+# Mensagem que aparece já escrita quando o visitante abre o WhatsApp.
+whatsapp:
+  message: "Hello, I would like to book an appointment."
+
+
+# ─── TÍTULO E DESCRIÇÃO PARA O GOOGLE (uma por página) ──────────────
+seo:
+  home:
+    title: "Vasco Oliveira | Physiotherapy in Seixal and Lisbon"
+    description: "Physiotherapist with training in osteopathy. Individual assessment, manual therapy and therapeutic exercise in Fernão Ferro (Seixal) and Belém (Lisbon)."
+  about:
+    title: "About | Vasco Oliveira, physiotherapist in Seixal and Lisbon"
+    description: "Meet Vasco Oliveira: a degree in Physiotherapy, five years of training in osteopathy and a practice built on individual assessment."
+  areas:
+    title: "Areas of care: back and neck pain, TMJ pain, headaches | Vasco Oliveira"
+    description: "Physiotherapy for neck pain, low back pain and musculoskeletal injuries, TMJ and jaw pain, bruxism, headaches, dizziness and persistent pain."
+  approach:
+    title: "Clinical approach | Person-centred physiotherapy | Vasco Oliveira"
+    description: "How I work: listening and assessment, understanding the condition, a plan of care and follow-up. Find out what to expect at your first physiotherapy appointment."
+  contact:
+    title: "Contact and booking | Physiotherapy in Seixal and Lisbon"
+    description: "Book your assessment via WhatsApp. Physiotherapy appointments in Fernão Ferro (Seixal) and Belém (Lisbon)."
+  privacy:
+    title: "Privacy and cookie policy | Vasco Oliveira"
+    description: "How personal data is handled on this website, which cookies may be used and how to exercise your rights under the GDPR."
+  articles:
+    title: "Articles | Vasco Oliveira, Physiotherapy and Osteopathy"
+    description: "Educational content on pain, movement and functional recovery."
+  notfound:
+    title: "Page not found | Vasco Oliveira"
+    description: "The page you are looking for does not exist or has been moved."
+
+
+# ─── MENU ───────────────────────────────────────────────────────────
+nav:
+  home: "Home"
+  about: "About"
+  areas: "Areas of Care"
+  approach: "Clinical Approach"
+  contact: "Contact & Booking"
+  articles: "Articles"
+  cta: "Book an appointment"
+
+# ─── PEQUENOS TEXTOS DE INTERFACE ───────────────────────────────────
+ui:
+  skip: "Skip to content"
+  main_nav: "Main navigation"
+  menu: "Menu"
+  language: "Language"
+  learn_more: "Learn more"
+  whatsapp_cta: "Book via WhatsApp"
+  whatsapp_fab: "Book an appointment via WhatsApp"
+  new_tab: "opens in a new tab"
+  on_this_page: "On this page"
+
+# Descrição de cada fotografia (lida por leitores de ecrã e pelo Google).
+image_alt:
+  portrait: "Portrait of Vasco Oliveira, physiotherapist"
+  manual_therapy: "Vasco Oliveira performing manual therapy during a physiotherapy appointment"
+  exercise: "Vasco Oliveira guiding a therapeutic exercise"
+  assessment: "Vasco Oliveira assessing a patient during an appointment"
+  detail: "Close-up of physiotherapy work during an appointment"
+
+
+# ─── LOCAIS (página inicial, contactos e rodapé) ────────────────────
+locations:
+  title: "Where to find me"
+  note: "The exact address is provided when you book."
+  items:
+    - name: "Fernão Ferro"
+      zone: "Seixal"
+    - name: "Belém"
+      zone: "Lisbon"
+
+
+# ════════════════════════════════════════════════════════════════════
+#  PÁGINA INICIAL
+# ════════════════════════════════════════════════════════════════════
+home:
+  hero:
+    lead: "Individual assessment, manual therapy and exercise to restore movement and function."
+    text: "I aim to understand where each condition comes from and the factors that influence it. Through physiotherapy, complemented by osteopathic techniques, I help each person regain function, movement and confidence in their body."
+    primary: "Book an appointment"
+    secondary: "See my approach"
+
+  problems:
+    title: "Does any of this sound familiar?"
+    intro: "Pain and physical limitations have different causes in each person. An individual assessment makes it possible to understand each situation and define an appropriate plan of care."
+
+  approach:
+    eyebrow: "My approach"
+    title: "Every person has a story. Treatment should respect it."
+    text: "Pain does not always come down to a single structure. Your clinical history, habits, movement and personal context also shape the experience of pain. That is why I carry out an individualised assessment and define a plan adjusted to each patient's needs."
+    elements:
+      - "Individualised assessment"
+      - "Manual therapy and osteopathic techniques"
+      - "Therapeutic exercise and functional recovery"
+      - "Education and follow-up"
+    button: "Explore the clinical approach"
+
+  about:
+    eyebrow: "About me"
+    title: "Close follow-up, grounded in thorough assessment."
+    text: "I am a physiotherapist with training in osteopathy. My practice integrates physiotherapy with osteopathic techniques, adapting each intervention to the person and their goals."
+    button: "More about me"
+
+  reviews:
+    title: "Patient reviews."
+    button: "See all reviews on Google"
+    consent_text: "To see the reviews on this page, you need to accept external content from Google."
+    consent_button: "Show reviews"
+
+  cta:
+    title: "Book your assessment."
+    text: "If you are in pain, have limited movement or want to understand your condition better, send me a message to ask any questions and schedule an assessment."
+    button: "Book via WhatsApp"
+
+
+# ════════════════════════════════════════════════════════════════════
+#  SOBRE MIM
+# ════════════════════════════════════════════════════════════════════
+about:
+  eyebrow: "About me"
+  title: "Physiotherapy with an integrative view of the human body."
+  paragraphs:
+    - "I am Vasco Oliveira, a physiotherapist with training in osteopathy. I completed my degree in Physiotherapy at Universidade Atlântica and went on to deepen my training with five years of Osteopathy at the Escuela de Osteopatía de Madrid."
+    - "I have a particular interest in understanding pain and the factors that influence function and movement. Good care starts with a careful assessment, listening to the patient and understanding their clinical history."
+    - "In my practice I bring together manual therapy, osteopathic techniques, therapeutic exercise and education, always adjusted to each person's needs."
+  credentials:
+    title: "Education and registration"
+    items:
+      - label: "Degree in Physiotherapy"
+        detail: "Universidade Atlântica"
+      - label: "Training in Osteopathy, five years"
+        detail: "Escuela de Osteopatía de Madrid (EOM)"
+      - label: "Physiotherapist"
+        detail: "Professional licence no. 2240"
+
+
+# ════════════════════════════════════════════════════════════════════
+#  ÁREAS DE INTERVENÇÃO
+# ════════════════════════════════════════════════════════════════════
+areas:
+  eyebrow: "Areas of care"
+  title: "Areas of care"
+  intro: "Pain and physical limitations have different causes in each person. On this page I describe the areas I work with most often, how the assessment is carried out and what a plan of care may include."
+  note_title: "Please note"
+  note: "Any intervention always depends on the clinical assessment. If you have warning signs, you should seek medical evaluation."
+  labels:
+    symptoms: "Associated symptoms and limitations"
+    assessment: "How the assessment works"
+    intervention: "What the intervention may include"
+    intervention_intro: "Depending on the assessment, the plan may include:"
+    faq: "Frequently asked questions"
+
+  items:
+    # ── 1 ──────────────────────────────────────────────────────────
+    - id: "musculoskeletal"
+      highlight: false
+      card_title: "Spinal pain and musculoskeletal injuries"
+      card_text: "Neck, mid-back and low back pain, tendinopathies and sports injuries, with a focus on returning to activity."
+      title: "Musculoskeletal physiotherapy"
+      subtitle: "Spinal pain, tendinopathies and sports injuries"
+      explanation: >-
+        Neck, mid-back and low back pain, tendinopathies and injuries related
+        to sport or work are among the most common reasons people seek
+        physiotherapy. They can appear suddenly or build up gradually, and
+        how they progress is influenced by factors such as load, movement,
+        rest and each person's circumstances.
+      symptoms:
+        - "Pain or stiffness in the neck, back or lower back"
+        - "Pain that radiates into the arm or leg"
+        - "Tendon or joint pain during or after exertion"
+        - "Difficulty sitting, lifting, sleeping or training"
+        - "Fear of returning to exercise or sport after an injury"
+      assessment: >-
+        I start by listening to your story: how the problem began, how it has
+        progressed, what makes it worse and what eases it. This is followed by
+        a physical assessment of movement, strength, mobility and response to
+        load, adapted to your situation. If anything suggests the need for a
+        medical evaluation or further tests, I will recommend it.
+      intervention:
+        - "Manual therapy and osteopathic techniques"
+        - "Therapeutic exercise, with gradual progression of load"
+        - "Mobility and neuromuscular control work"
+        - "Education about the condition and managing daily activity"
+        - "Planning the return to work, training or competition"
+      faq:
+        - q: "Should I bring test results to the appointment?"
+          a: "If you have scans or medical reports related to the problem, it is helpful to bring them. Tests are not always needed before starting: if the assessment suggests they could be useful, I will recommend that you speak to your doctor."
+        - q: "Should I rest while I am in pain?"
+          a: "It depends on the situation. In many cases, keeping some movement going, within what you can tolerate, is part of recovery. In others, load needs to be reduced for a while. During the assessment we work out together what to keep, adapt or avoid."
+        - q: "How many sessions will I need?"
+          a: "There is no number that applies to everyone. It depends on the condition, how long you have had it, your goals and how you respond to the intervention. After the assessment I explain what is reasonable to expect, and we reassess along the way."
+        - q: "Can I keep training?"
+          a: "Whenever possible, the aim is to adapt your training rather than stop it. We adjust loads, exercises and volume according to your symptoms and plan a gradual return to activity."
+
+    # ── 2 ── (cartão com destaque visual na página inicial) ────────
+    - id: "tmj"
+      highlight: true
+      card_title: "TMJ and orofacial pain"
+      card_text: "Jaw pain, bruxism, limited mouth opening and associated neck tension."
+      title: "TMJ and orofacial pain"
+      subtitle: "Jaw pain, bruxism and limited mouth opening"
+      explanation: >-
+        The temporomandibular joint (TMJ) connects the jaw to the skull and is
+        involved in chewing, speaking and yawning. Temporomandibular disorders
+        can involve the joint, the chewing muscles and neighbouring
+        structures, and often appear alongside tension in the neck.
+      symptoms:
+        - "Pain in the jaw, the face or near the ear"
+        - "Clicking in the joint, when accompanied by pain or restriction"
+        - "Difficulty or discomfort when opening the mouth, chewing or yawning"
+        - "A feeling that the jaw locks or deviates"
+        - "Clenching or grinding the teeth (bruxism), with tension in the face or neck"
+      assessment: >-
+        The assessment covers the history of your symptoms, habits (such as
+        clenching), sleep and whatever makes the problem better or worse. In
+        the physical examination I look at how the jaw opens and moves, the
+        joint and the chewing muscles, as well as the cervical spine. Where
+        appropriate, care can be coordinated with your dentist or with other
+        health professionals involved in your care.
+      intervention:
+        - "Manual therapy for the joint, the chewing muscles and the neck"
+        - "Jaw mobility, coordination and relaxation exercises"
+        - "Education about oral habits and the resting position of the jaw"
+        - "Self-care strategies for everyday life"
+      faq:
+        - q: "Can bruxism be treated with physiotherapy?"
+          a: "Bruxism has a range of causes. Physiotherapy does not act on all of them, but it can help you manage the pain, muscle tension and habits that come with it. Whether other measures are needed, such as an occlusal splint, is for your dentist to assess."
+        - q: "Is a clicking jaw something to worry about?"
+          a: "Clicking without pain and without restricted movement is common and often needs no treatment. If it comes with pain, locking or difficulty opening the mouth, an assessment is worthwhile."
+        - q: "How are the jaw and the neck related?"
+          a: "The jaw and the cervical spine are linked through muscles and nerves, and problems in the two areas often appear together. That is why a TMJ assessment also includes the neck."
+        - q: "I already wear a splint. Is physiotherapy still worth considering?"
+          a: "It can be. A splint and physiotherapy have different aims and can complement each other. The assessment shows whether there are muscular, joint or habit-related factors worth working on."
+
+    # ── 3 ──────────────────────────────────────────────────────────
+    - id: "headaches-dizziness"
+      highlight: false
+      card_title: "Headaches and dizziness"
+      card_text: "When linked to cervical or musculoskeletal factors, following assessment."
+      title: "Headaches and dizziness"
+      subtitle: "When cervical or musculoskeletal factors are involved"
+      explanation: >-
+        Headaches and dizziness have many possible causes, and not all of them
+        fall within the scope of physiotherapy. In some cases the neck, the
+        muscles of the head and neck or the temporomandibular joint contribute
+        to the symptoms. It is in those cases, identified through assessment,
+        that physiotherapy may have a role.
+      symptoms:
+        - "Headache accompanied by neck pain or stiffness"
+        - "Pain that starts at the back of the neck and spreads to the head"
+        - "Symptoms that change with certain neck movements or sustained positions"
+        - "A feeling of unsteadiness or dizziness associated with neck problems"
+        - "Tension in the face, jaw or shoulders"
+      assessment: >-
+        The first step is to establish whether the symptoms are consistent
+        with a musculoskeletal origin. To do that, I take a detailed clinical
+        history, including the pattern, frequency and triggers of your
+        symptoms, and assess the cervical spine, the muscles and, where
+        indicated, the TMJ. If the symptoms point to another origin, or if
+        there are warning signs, I will recommend a medical evaluation before
+        any intervention.
+      intervention:
+        - "Manual therapy for the neck and associated tissues"
+        - "Specific exercise for neck mobility, strength and control"
+        - "Education about triggers and activity management"
+        - "Coordination with your doctor, when needed"
+      faq:
+        - q: "Can all headaches be treated with physiotherapy?"
+          a: "No. There are several types of headache, with different origins. Physiotherapy may be useful when cervical or musculoskeletal factors are contributing to the symptoms, which can only be established through an assessment."
+        - q: "Is my dizziness coming from my neck?"
+          a: "It may or may not be. Dizziness has a wide range of causes, including inner ear, cardiovascular and neurological causes, which should be assessed by a doctor. Once those have been clarified and there are associated neck problems, physiotherapy may be part of the plan."
+        - q: "When should I see a doctor?"
+          a: "Seek urgent medical attention for a sudden, very severe headache that is different from usual, or one that comes with fever, changes in vision or speech, loss of strength, numbness or fainting, or that follows an injury. If in doubt, medical evaluation comes first."
+
+    # ── 4 ──────────────────────────────────────────────────────────
+    - id: "persistent-pain"
+      highlight: false
+      card_title: "Persistent pain and functional recovery"
+      card_text: "Limitations in daily activities, pain education and self-management."
+      title: "Persistent pain and functional recovery"
+      subtitle: "Regaining capacity in everyday activities"
+      explanation: >-
+        Pain is described as persistent when it continues beyond the usual
+        recovery time, generally more than three months. In these situations,
+        pain no longer reflects only the state of one structure and becomes
+        influenced by several factors, such as sleep, stress, activity levels
+        and previous experiences. The intervention focuses on restoring
+        function and giving the person tools to manage their condition.
+      symptoms:
+        - "Pain that has persisted or kept returning for several months"
+        - "Difficulty with everyday tasks, work or exercise"
+        - "Fatigue, unrefreshing sleep or lower tolerance to effort"
+        - "Fear that movement will make the pain worse"
+        - "Loss of confidence in the body and a gradual reduction in activity"
+      assessment: >-
+        The assessment aims to understand the course of your pain, the impact
+        it has on your life and what matters most to you to get back. Beyond
+        the physical examination, we talk about routines, sleep, activity and
+        previous treatments, to identify the factors that may be helping to
+        maintain the symptoms.
+      intervention:
+        - "Education about pain and the factors that influence it"
+        - "Therapeutic exercise, with gradual exposure to movement and activity"
+        - "Manual therapy, where appropriate, as part of an active plan"
+        - "Setting functional goals and self-management strategies"
+      faq:
+        - q: "If my scans show nothing, why am I in pain?"
+          a: "Pain is real even when scans show no changes. Scans show structures, but pain also depends on how the nervous system processes information and on factors such as sleep, stress and activity. Understanding this is part of the recovery process."
+        - q: "Can movement make my pain worse?"
+          a: "Feeling some discomfort when you start moving again is common and does not, in itself, mean there is damage. The plan is built up gradually, within what you can tolerate, so that you can move with confidence again."
+        - q: "Will the pain go away completely?"
+          a: "That cannot be guaranteed. For many people the pain decreases; for others, the main gain is getting back activities, independence and quality of life. Goals are set together with you and reviewed throughout your care."
+        - q: "What does self-management mean?"
+          a: "It means having the knowledge and strategies to deal with your condition day to day: knowing how to pace activity, recognising what makes things worse and what helps, and keeping up an adapted exercise plan. The aim is greater independence."
+
+
+# ════════════════════════════════════════════════════════════════════
+#  ABORDAGEM CLÍNICA
+# ════════════════════════════════════════════════════════════════════
+approach:
+  eyebrow: "Clinical approach"
+  title: "An individualised, person-centred approach."
+  intro: "Every person has their own story, needs and goals. Care begins with understanding those factors and how they relate to the current condition."
+  steps_title: "Four stages"
+  steps:
+    - title: "Listening and assessment"
+      text: "I start by getting to know your clinical history, symptoms, limitations and goals. This is followed by a physical assessment suited to your situation."
+    - title: "Understanding the condition"
+      text: "I look for the factors that may be contributing to your symptoms and the functions that need attention, and explain clearly what I have found."
+    - title: "Plan of care"
+      text: "The plan may combine manual therapy, osteopathic techniques, therapeutic exercise, mobility and neuromuscular control work, and education about pain and movement."
+    - title: "Follow-up and progress"
+      text: "Throughout the process I reassess, adjust the plan and follow how you respond to the intervention."
+  osteopathic:
+    title: "Osteopathic techniques"
+    paragraphs:
+      - "Osteopathic techniques are manual techniques that can include articular, myofascial, cranial and visceral approaches."
+      - "I use them when they are clinically appropriate, as a complement to the intervention and always as part of the clinical reasoning that follows from the assessment. The choice depends on each person and each situation."
+  closing: "The aim is to help each person regain capacity, independence and confidence in movement."
+  first_visit:
+    title: "Your first appointment: what to expect"
+    duration_label: "Duration"
+    price_label: "Fee"
+    bring_label: "What to bring"
+    bring:
+      - "Comfortable clothing that lets you move freely"
+      - "Scans and medical reports related to the problem, if you have them"
+      - "A note of any medication you take regularly"
+    how_label: "How it works"
+    how: "The appointment starts with a conversation about your clinical history, symptoms and goals, followed by the physical assessment. At the end I explain what I have found, answer your questions and propose a plan."
+  button: "Book an assessment"
+
+
+# ════════════════════════════════════════════════════════════════════
+#  CONTACTOS E MARCAÇÃO
+# ════════════════════════════════════════════════════════════════════
+contact:
+  eyebrow: "Contact and booking"
+  title: "Get in touch."
+  text: "Send me a message on WhatsApp and I will let you know which location is best suited to your situation."
+  button: "Book via WhatsApp"
+  whatsapp_label: "WhatsApp"
+  email_label: "Alternatively, by email:"
+  locations_title: "Locations"
+  notice: "Please do not send detailed clinical information by message. The details will be dealt with during your appointment."
+
+
+# ════════════════════════════════════════════════════════════════════
+#  RODAPÉ, COOKIES E OUTROS
+# ════════════════════════════════════════════════════════════════════
+footer:
+  contacts_title: "Contact"
+  zones_title: "Areas served"
+  pages_title: "Pages"
+  privacy: "Privacy Policy"
+  cookie_settings: "Cookie preferences"
+  complaints_book: "Complaints Book (Livro de Reclamações)"
+  rights: "All rights reserved."
+
+cookies:
+  label: "Cookies"
+  text: "This website only uses optional cookies, for visit statistics and to show external content from Google, with your consent."
+  more: "Learn more"
+  accept: "Accept"
+  reject: "Decline"
+
+articles:
+  eyebrow: "Articles"
+  title: "Articles"
+  intro: "Educational content on pain, movement and functional recovery."
+  empty: "No articles have been published yet."
+  read: "Read article"
+  back: "All articles"
+
+notfound:
+  title: "Page not found"
+  text: "The page you are looking for does not exist or has been moved."
+  button: "Back to home"

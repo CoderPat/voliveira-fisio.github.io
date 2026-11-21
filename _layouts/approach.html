@@ -1,0 +1,89 @@
+---
+layout: default
+---
+{%- include vars.html -%}
+{%- assign duration = s.first_visit.duration[lang] -%}
+{%- assign price = s.first_visit.price[lang] -%}
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow">{{ t.approach.eyebrow }}</p>
+    <h1>{{ t.approach.title }}</h1>
+    <p class="page-hero__intro">{{ t.approach.intro }}</p>
+  </div>
+</section>
+
+<section class="section section--flush-top" aria-labelledby="steps-title">
+  <div class="container">
+    <h2 id="steps-title" class="visually-hidden">{{ t.approach.steps_title }}</h2>
+    <ol class="steps" role="list">
+      {%- for step in t.approach.steps %}
+      <li class="step">
+        <span class="step__num" aria-hidden="true">0{{ forloop.index }}</span>
+        <h3>{{ step.title }}</h3>
+        <p>{{ step.text }}</p>
+      </li>
+      {%- endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="section section--cream" aria-labelledby="osteopathic-title">
+  <div class="container split">
+    <div class="split__media">
+      {% include photo.html slot="manual_therapy" shape="tall" %}
+    </div>
+    <div class="split__text">
+      <h2 id="osteopathic-title">{{ t.approach.osteopathic.title }}</h2>
+      {%- for paragraph in t.approach.osteopathic.paragraphs %}
+      <p>{{ paragraph }}</p>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <p class="closing">{{ t.approach.closing }}</p>
+  </div>
+</section>
+
+<section class="section section--sand" aria-labelledby="first-visit-title">
+  <div class="container split split--top">
+    <div class="split__text">
+      <h2 id="first-visit-title">{{ t.approach.first_visit.title }}</h2>
+      <dl class="visit">
+        {%- comment %} Duration and fee stay hidden until they are filled in settings.yml. {% endcomment %}
+        {%- if duration and duration != "" %}
+        <div class="visit__row">
+          <dt>{{ t.approach.first_visit.duration_label }}</dt>
+          <dd>{{ duration }}</dd>
+        </div>
+        {%- endif %}
+        {%- if price and price != "" %}
+        <div class="visit__row">
+          <dt>{{ t.approach.first_visit.price_label }}</dt>
+          <dd>{{ price }}</dd>
+        </div>
+        {%- endif %}
+        <div class="visit__row">
+          <dt>{{ t.approach.first_visit.how_label }}</dt>
+          <dd>{{ t.approach.first_visit.how }}</dd>
+        </div>
+        <div class="visit__row">
+          <dt>{{ t.approach.first_visit.bring_label }}</dt>
+          <dd>
+            <ul class="ticks" role="list">
+              {%- for thing in t.approach.first_visit.bring %}
+              <li>{{ thing }}</li>
+              {%- endfor %}
+            </ul>
+          </dd>
+        </div>
+      </dl>
+      <a class="btn btn--primary btn--lg" href="{{ wa_url }}" target="_blank" rel="noopener">{% include icon.html name="whatsapp" %}{{ t.approach.button }}</a>
+    </div>
+    <div class="split__media">
+      {% include photo.html slot="exercise" shape="tall" %}
+    </div>
+  </div>
+</section>

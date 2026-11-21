@@ -1,0 +1,100 @@
+---
+layout: default
+---
+{%- include vars.html -%}
+<section class="hero">
+  <div class="container hero__grid">
+    <div class="hero__text">
+      <h1 class="hero__title">{{ t.identity.name }} <span class="hero__subtitle">{{ t.identity.tagline }}</span></h1>
+      <p class="hero__lead">{{ t.home.hero.lead }}</p>
+      <p class="hero__body">{{ t.home.hero.text }}</p>
+      <div class="btn-row">
+        <a class="btn btn--primary btn--lg" href="{{ wa_url }}" target="_blank" rel="noopener">{% include icon.html name="whatsapp" %}{{ t.home.hero.primary }}</a>
+        <a class="btn btn--ghost btn--lg" href="{{ routes.approach[lang] | relative_url }}">{{ t.home.hero.secondary }}</a>
+      </div>
+    </div>
+    <div class="hero__media">
+      {% include photo.html slot="portrait" shape="arch" eager=true %}
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="problems-title">
+  <div class="container">
+    <header class="section-head">
+      <h2 id="problems-title">{{ t.home.problems.title }}</h2>
+      <p class="section-head__intro">{{ t.home.problems.intro }}</p>
+    </header>
+    <ul class="cards" role="list">
+      {%- for item in t.areas.items %}
+      <li class="card{% if item.highlight %} card--highlight{% endif %}">
+        <span class="card__num" aria-hidden="true">0{{ forloop.index }}</span>
+        <h3 class="card__title"><a href="{{ routes.areas[lang] | relative_url }}#{{ item.id }}">{{ item.card_title }}</a></h3>
+        <p class="card__text">{{ item.card_text }}</p>
+        <span class="card__more" aria-hidden="true">{{ t.ui.learn_more }}{% include icon.html name="arrow" %}</span>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section section--cream" aria-labelledby="approach-title">
+  <div class="container split">
+    <div class="split__text">
+      <p class="eyebrow">{{ t.home.approach.eyebrow }}</p>
+      <h2 id="approach-title">{{ t.home.approach.title }}</h2>
+      <p>{{ t.home.approach.text }}</p>
+      <ol class="elements" role="list">
+        {%- for element in t.home.approach.elements %}
+        <li><span class="elements__num" aria-hidden="true">0{{ forloop.index }}</span>{{ element }}</li>
+        {%- endfor %}
+      </ol>
+      <a class="btn btn--ghost" href="{{ routes.approach[lang] | relative_url }}">{{ t.home.approach.button }}{% include icon.html name="arrow" %}</a>
+    </div>
+    <div class="split__media">
+      {% include photo.html slot="manual_therapy" shape="tall" %}
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="about-title">
+  <div class="container split split--reverse">
+    <div class="split__text">
+      <p class="eyebrow">{{ t.home.about.eyebrow }}</p>
+      <h2 id="about-title">{{ t.home.about.title }}</h2>
+      <p>{{ t.home.about.text }}</p>
+      <a class="btn btn--ghost" href="{{ routes.about[lang] | relative_url }}">{{ t.home.about.button }}{% include icon.html name="arrow" %}</a>
+    </div>
+    <div class="split__media">
+      {% include photo.html slot="assessment" shape="wide" %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--sand" aria-labelledby="locations-title">
+  <div class="container">
+    <header class="section-head">
+      <h2 id="locations-title">{{ t.locations.title }}</h2>
+    </header>
+    {% include locations.html buttons=true %}
+  </div>
+</section>
+
+<section class="section section--reviews" aria-labelledby="reviews-title">
+  <div class="container">
+    <div class="reviews{% if has_widget %} reviews--widget{% endif %}">
+      <h2 id="reviews-title" class="reviews__title">{{ t.home.reviews.title }}</h2>
+      {%- if has_widget %}
+      {%- comment %} The widget markup stays inert inside <template> until the visitor consents. {% endcomment %}
+      <div class="reviews__widget" data-reviews-slot>
+        <p>{{ t.home.reviews.consent_text }}</p>
+        <button type="button" class="btn btn--ghost btn--sm" data-consent-external>{{ t.home.reviews.consent_button }}</button>
+      </div>
+      <template id="reviews-widget-template">{{ s.google_reviews_widget }}</template>
+      {%- endif %}
+      <a class="btn btn--ghost" href="{{ s.google_reviews_url }}" target="_blank" rel="noopener">{{ t.home.reviews.button }}{% include icon.html name="external" %}<span class="visually-hidden"> ({{ t.ui.new_tab }})</span></a>
+    </div>
+  </div>
+</section>
+
+{% include cta.html %}

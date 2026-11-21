@@ -1,0 +1,17 @@
+---
+layout: default
+---
+{%- assign routes = site.data.routes -%}
+<section class="page-hero notfound">
+  <div class="container">
+    <p class="eyebrow">404</p>
+    <h1>{{ site.data.pt.notfound.title }}</h1>
+    <p class="page-hero__intro">{{ site.data.pt.notfound.text }}</p>
+    <p><a class="btn btn--primary" href="{{ routes.home.pt | relative_url }}">{{ site.data.pt.notfound.button }}</a></p>
+
+    <div class="notfound__alt" lang="en">
+      <p><strong>{{ site.data.en.notfound.title }}.</strong> {{ site.data.en.notfound.text }}</p>
+      <p><a class="btn btn--ghost" href="{{ routes.home.en | relative_url }}">{{ site.data.en.notfound.button }}</a></p>
+    </div>
+  </div>
+</section>

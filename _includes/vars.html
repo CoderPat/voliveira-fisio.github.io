@@ -1,0 +1,19 @@
+{%- comment -%}
+  Shared variables. Jekyll renders each layout in its own pass, so every layout
+  starts with `include vars.html`; includes rendered inside it see the same values.
+{%- endcomment -%}
+{%- assign lang = page.lang | default: "pt" -%}
+{%- assign t = site.data[lang] -%}
+{%- assign s = site.data.settings -%}
+{%- assign routes = site.data.routes -%}
+{%- if lang == "pt" -%}{%- assign alt_lang = "en" -%}{%- else -%}{%- assign alt_lang = "pt" -%}{%- endif -%}
+{%- capture wa_url -%}https://wa.me/{{ s.whatsapp_number }}?text={{ t.whatsapp.message | url_encode | replace: "+", "%20" }}{%- endcapture -%}
+{%- assign has_ga = false -%}
+{%- if s.google_analytics_id and s.google_analytics_id != "" -%}{%- assign has_ga = true -%}{%- endif -%}
+{%- assign has_widget = false -%}
+{%- if s.google_reviews_widget and s.google_reviews_widget != "" -%}{%- assign has_widget = true -%}{%- endif -%}
+{%- assign needs_consent = false -%}
+{%- if has_ga or has_widget -%}{%- assign needs_consent = true -%}{%- endif -%}
+{%- assign has_email = false -%}
+{%- if s.email and s.email != "" -%}{%- assign has_email = true -%}{%- endif -%}
+{%- assign lang_articles = site.articles | where: "lang", lang | sort: "date" | reverse -%}

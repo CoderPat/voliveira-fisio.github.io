@@ -1,0 +1,42 @@
+---
+layout: default
+---
+{%- include vars.html -%}
+<section class="page-hero">
+  <div class="container about-hero">
+    <div class="about-hero__text">
+      <p class="eyebrow">{{ t.about.eyebrow }}</p>
+      <h1>{{ t.about.title }}</h1>
+      <div class="about-hero__body">
+        {%- for paragraph in t.about.paragraphs %}
+        <p>{{ paragraph }}</p>
+        {%- endfor %}
+      </div>
+    </div>
+    <div class="about-hero__media">
+      {% include photo.html slot="portrait" shape="arch" eager=true %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--cream" aria-labelledby="credentials-title">
+  <div class="container split split--top">
+    <div class="split__media">
+      {% include photo.html slot="assessment" shape="tall" %}
+    </div>
+    <div class="split__text">
+      <h2 id="credentials-title">{{ t.about.credentials.title }}</h2>
+      <dl class="credentials">
+        {%- for item in t.about.credentials.items %}
+        <div class="credentials__row">
+          <dt>{{ item.label }}</dt>
+          <dd>{{ item.detail }}</dd>
+        </div>
+        {%- endfor %}
+      </dl>
+      <a class="btn btn--ghost" href="{{ routes.approach[lang] | relative_url }}">{{ t.home.approach.button }}{% include icon.html name="arrow" %}</a>
+    </div>
+  </div>
+</section>
+
+{% include cta.html %}

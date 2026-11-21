@@ -1,0 +1,67 @@
+{%- comment -%}
+  Structured data for a health professional. Deliberately has no street address
+  and no telephone: only the areas served and the booking link are public.
+{%- endcomment -%}
+{%- assign home_url = routes.home[lang] | absolute_url -%}
+{%- assign root_url = routes.home.pt | absolute_url -%}
+{%- assign portrait = s.images.portrait -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": {{ root_url | append: "#website" | jsonify }},
+      "url": {{ home_url | jsonify }},
+      "name": {{ t.meta.site_name | jsonify }},
+      "inLanguage": {{ t.meta.html_lang | jsonify }},
+      "publisher": { "@id": {{ root_url | append: "#practice" | jsonify }} }
+    },
+    {
+      "@type": ["MedicalBusiness", "Physiotherapy"],
+      "@id": {{ root_url | append: "#practice" | jsonify }},
+      "name": {{ t.meta.site_name | jsonify }},
+      "description": {{ t.seo.home.description | jsonify }},
+      "url": {{ home_url | jsonify }},
+      {%- if portrait and portrait != "" %}
+      "image": {{ portrait | prepend: "/assets/img/" | absolute_url | jsonify }},
+      {%- endif %}
+      "medicalSpecialty": "https://schema.org/Physiotherapy",
+      "areaServed": [
+        { "@type": "Place", "name": "Fernão Ferro" },
+        { "@type": "AdministrativeArea", "name": "Seixal" },
+        { "@type": "Place", "name": "Belém" },
+        { "@type": "City", "name": {{ t.locations.items[1].zone | jsonify }} }
+      ],
+      "sameAs": [{{ s.google_reviews_url | jsonify }}],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "appointments",
+        "url": {{ wa_url | jsonify }}
+      },
+      "founder": { "@id": {{ root_url | append: "#person" | jsonify }} }
+    },
+    {
+      "@type": "Person",
+      "@id": {{ root_url | append: "#person" | jsonify }},
+      "name": {{ t.identity.name | jsonify }},
+      "jobTitle": {{ t.identity.job_title | jsonify }},
+      "description": {{ t.identity.designation | jsonify }},
+      "url": {{ routes.about[lang] | absolute_url | jsonify }},
+      {%- if portrait and portrait != "" %}
+      "image": {{ portrait | prepend: "/assets/img/" | absolute_url | jsonify }},
+      {%- endif %}
+      "worksFor": { "@id": {{ root_url | append: "#practice" | jsonify }} },
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "Universidade Atlântica" },
+        { "@type": "EducationalOrganization", "name": "Escuela de Osteopatía de Madrid" }
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "name": "Cédula profissional de Fisioterapia",
+        "value": "2240"
+      }
+    }
+  ]
+}
+</script>

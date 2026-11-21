@@ -1,0 +1,428 @@
+# ════════════════════════════════════════════════════════════════════
+#  TEXTOS EM PORTUGUÊS
+#
+#  Como editar: altere apenas o texto entre aspas, ou o texto por baixo
+#  de uma linha terminada em ">-". Mantenha as aspas e os espaços no
+#  início de cada linha. O que altera aqui deve ser alterado também em
+#  en.yml, para as duas línguas dizerem o mesmo.
+# ════════════════════════════════════════════════════════════════════
+
+meta:
+  html_lang: "pt-PT"
+  og_locale: "pt_PT"
+  site_name: "Vasco Oliveira — Fisioterapia e Osteopatia"
+
+identity:
+  name: "Vasco Oliveira"
+  tagline: "Fisioterapia e Osteopatia"
+  designation: "Fisioterapeuta com formação em Osteopatia"
+  job_title: "Fisioterapeuta"
+  license: "Cédula profissional de Fisioterapia n.º 2240"
+
+# Mensagem que aparece já escrita quando o visitante abre o WhatsApp.
+whatsapp:
+  message: "Olá, gostaria de marcar uma consulta."
+
+
+# ─── TÍTULO E DESCRIÇÃO PARA O GOOGLE (uma por página) ──────────────
+seo:
+  home:
+    title: "Vasco Oliveira | Fisioterapia e Osteopatia em Fernão Ferro e Belém"
+    description: "Fisioterapeuta com formação em Osteopatia. Avaliação individual, terapia manual e exercício terapêutico em Fernão Ferro (Seixal) e em Belém (Lisboa)."
+  about:
+    title: "Sobre mim | Vasco Oliveira, fisioterapeuta em Fernão Ferro e Lisboa"
+    description: "Conheça o percurso de Vasco Oliveira: licenciatura em Fisioterapia, formação de cinco anos em Osteopatia e uma prática assente na avaliação individual."
+  areas:
+    title: "Áreas de intervenção: dor na coluna, ATM e cefaleias | Vasco Oliveira"
+    description: "Fisioterapia para dor cervical e dor lombar, lesões músculo-esqueléticas, tratamento da ATM, dor na mandíbula e bruxismo, cefaleias, tonturas e dor persistente."
+  approach:
+    title: "Abordagem clínica | Fisioterapia centrada na pessoa | Vasco Oliveira"
+    description: "Como trabalho: escuta e avaliação, compreensão da condição, plano de intervenção e acompanhamento. Saiba o que esperar da primeira consulta de fisioterapia."
+  contact:
+    title: "Contactos e marcação | Fisioterapia em Fernão Ferro e Belém"
+    description: "Marque a sua avaliação por WhatsApp. Consultas de fisioterapia em Fernão Ferro (Seixal) e em Belém (Lisboa)."
+  privacy:
+    title: "Política de privacidade e cookies | Vasco Oliveira"
+    description: "Como são tratados os dados pessoais neste site, que cookies podem ser utilizados e como exercer os seus direitos ao abrigo do RGPD."
+  articles:
+    title: "Artigos | Vasco Oliveira, Fisioterapia e Osteopatia"
+    description: "Conteúdos educativos sobre dor, movimento e recuperação funcional."
+  notfound:
+    title: "Página não encontrada | Vasco Oliveira"
+    description: "A página que procura não existe ou foi movida."
+
+
+# ─── MENU ───────────────────────────────────────────────────────────
+nav:
+  home: "Início"
+  about: "Sobre Mim"
+  areas: "Áreas de Intervenção"
+  approach: "Abordagem Clínica"
+  contact: "Contactos e Marcação"
+  articles: "Artigos"
+  cta: "Marcar consulta"
+
+# ─── PEQUENOS TEXTOS DE INTERFACE ───────────────────────────────────
+ui:
+  skip: "Saltar para o conteúdo"
+  main_nav: "Navegação principal"
+  menu: "Menu"
+  language: "Idioma"
+  learn_more: "Saber mais"
+  whatsapp_cta: "Marcar por WhatsApp"
+  whatsapp_fab: "Marcar consulta por WhatsApp"
+  new_tab: "abre num novo separador"
+  on_this_page: "Nesta página"
+
+# Descrição de cada fotografia (lida por leitores de ecrã e pelo Google).
+# Ajuste quando carregar as fotografias definitivas.
+image_alt:
+  portrait: "Retrato de Vasco Oliveira, fisioterapeuta"
+  manual_therapy: "Vasco Oliveira a realizar terapia manual durante uma consulta de fisioterapia"
+  exercise: "Vasco Oliveira a orientar um exercício terapêutico"
+  assessment: "Vasco Oliveira a fazer a avaliação de um paciente em consulta"
+  detail: "Pormenor do trabalho de fisioterapia em consulta"
+
+
+# ─── LOCAIS (página inicial, contactos e rodapé) ────────────────────
+locations:
+  title: "Onde pode encontrar-me"
+  note: "A morada exata é indicada no momento da marcação."
+  items:
+    - name: "Fernão Ferro"
+      zone: "Seixal"
+    - name: "Belém"
+      zone: "Lisboa"
+
+
+# ════════════════════════════════════════════════════════════════════
+#  PÁGINA INICIAL
+# ════════════════════════════════════════════════════════════════════
+home:
+  hero:
+    lead: "Avaliação individual, terapia manual e exercício para recuperar movimento e função."
+    text: "Procuro compreender a origem e os fatores que influenciam cada condição. Através da Fisioterapia, complementada por técnicas osteopáticas, ajudo cada pessoa a recuperar função, movimento e confiança no seu corpo."
+    primary: "Marcar consulta"
+    secondary: "Conhecer a abordagem"
+
+  problems:
+    title: "Com que problema se identifica?"
+    intro: "A dor e as limitações físicas têm causas diferentes em cada pessoa. A avaliação individual permite compreender cada situação e definir uma intervenção adequada."
+    # Os quatro cartões vêm da secção "areas" mais abaixo (card_title e card_text).
+
+  approach:
+    eyebrow: "A minha abordagem"
+    title: "Cada pessoa tem uma história. O tratamento deve respeitá-la."
+    text: "A dor nem sempre depende de uma única estrutura. A história clínica, os hábitos, o movimento e o contexto de cada pessoa também influenciam a experiência de dor. Por isso, faço uma avaliação individualizada e defino um plano ajustado às necessidades de cada paciente."
+    elements:
+      - "Avaliação individualizada"
+      - "Terapia manual e técnicas osteopáticas"
+      - "Exercício terapêutico e recuperação funcional"
+      - "Educação e acompanhamento"
+    button: "Conhecer a abordagem clínica"
+
+  about:
+    eyebrow: "Sobre mim"
+    title: "Acompanhamento próximo, baseado em avaliação rigorosa."
+    text: "Sou fisioterapeuta com formação em Osteopatia. A minha prática integra a Fisioterapia com técnicas osteopáticas, adaptando cada intervenção à pessoa e aos seus objetivos."
+    button: "Saber mais sobre mim"
+
+  reviews:
+    title: "Opiniões de pacientes."
+    button: "Ver todas as avaliações no Google"
+    consent_text: "Para ver as avaliações nesta página, é necessário aceitar conteúdos externos do Google."
+    consent_button: "Mostrar avaliações"
+
+  cta:
+    title: "Marque a sua avaliação."
+    text: "Se sente dor, tem limitações de movimento ou quer compreender melhor a sua condição, envie-me uma mensagem para esclarecer dúvidas e agendar uma avaliação."
+    button: "Marcar por WhatsApp"
+
+
+# ════════════════════════════════════════════════════════════════════
+#  SOBRE MIM
+# ════════════════════════════════════════════════════════════════════
+about:
+  eyebrow: "Sobre mim"
+  title: "Fisioterapia com uma visão integrativa do corpo humano."
+  paragraphs:
+    - "Sou Vasco Oliveira, fisioterapeuta com formação em Osteopatia. Concluí a licenciatura em Fisioterapia na Universidade Atlântica e aprofundei a minha formação com cinco anos de Osteopatia na Escuela de Osteopatía de Madrid."
+    - "Tenho especial interesse na compreensão da dor e dos fatores que influenciam a função e o movimento. Uma boa intervenção começa numa avaliação cuidada, na escuta do paciente e na compreensão da sua história clínica."
+    - "Na minha prática, integro terapia manual, técnicas osteopáticas, exercício terapêutico e educação, sempre ajustados às necessidades de cada pessoa."
+  credentials:
+    title: "Formação e registo"
+    items:
+      - label: "Licenciatura em Fisioterapia"
+        detail: "Universidade Atlântica"
+      - label: "Formação em Osteopatia, cinco anos"
+        detail: "Escuela de Osteopatía de Madrid (EOM)"
+      - label: "Fisioterapeuta"
+        detail: "Cédula profissional n.º 2240"
+
+
+# ════════════════════════════════════════════════════════════════════
+#  ÁREAS DE INTERVENÇÃO
+#  Cada área tem: o cartão da página inicial (card_title, card_text)
+#  e a secção completa da página Áreas de Intervenção.
+# ════════════════════════════════════════════════════════════════════
+areas:
+  eyebrow: "Áreas de intervenção"
+  title: "Áreas de intervenção"
+  intro: "A dor e as limitações físicas têm causas diferentes em cada pessoa. Nesta página descrevo as áreas em que trabalho com maior frequência, a forma como é feita a avaliação e o que pode fazer parte do plano de intervenção."
+  note_title: "Nota"
+  note: "A intervenção depende sempre da avaliação clínica. Perante sinais de alerta, deve procurar avaliação médica."
+  labels:
+    symptoms: "Sintomas e limitações associados"
+    assessment: "Como é feita a avaliação"
+    intervention: "O que pode incluir a intervenção"
+    intervention_intro: "Consoante a avaliação, o plano pode incluir:"
+    faq: "Perguntas frequentes"
+
+  items:
+    # ── 1 ──────────────────────────────────────────────────────────
+    - id: "musculo-esqueletica"
+      highlight: false
+      card_title: "Dor na coluna e lesões músculo-esqueléticas"
+      card_text: "Dor cervical, dorsal e lombar, tendinopatias e lesões desportivas, com atenção ao retorno à atividade."
+      title: "Fisioterapia músculo-esquelética"
+      subtitle: "Dor na coluna, tendinopatias e lesões desportivas"
+      explanation: >-
+        A dor cervical, dorsal ou lombar, as tendinopatias e as lesões
+        associadas ao desporto ou ao trabalho estão entre os motivos mais
+        frequentes de procura de fisioterapia. Podem surgir de forma súbita ou
+        instalar-se aos poucos, e a sua evolução é influenciada por fatores
+        como a carga, o movimento, o descanso e o contexto de cada pessoa.
+      symptoms:
+        - "Dor ou rigidez no pescoço, nas costas ou na região lombar"
+        - "Dor que irradia para o braço ou para a perna"
+        - "Dor em tendões ou articulações durante ou depois do esforço"
+        - "Dificuldade em estar sentado, levantar pesos, dormir ou treinar"
+        - "Receio de voltar ao exercício ou ao desporto depois de uma lesão"
+      assessment: >-
+        Começo por ouvir a sua história: como surgiu a queixa, como tem
+        evoluído, o que a agrava e o que a alivia. Segue-se uma avaliação
+        física do movimento, da força, da mobilidade e da resposta ao esforço,
+        ajustada à sua situação. Se algum sinal indicar a necessidade de
+        avaliação médica ou de exames complementares, recomendo essa avaliação.
+      intervention:
+        - "Terapia manual e técnicas osteopáticas"
+        - "Exercício terapêutico, com progressão gradual da carga"
+        - "Trabalho de mobilidade e de controlo neuromuscular"
+        - "Educação sobre a condição e gestão da atividade diária"
+        - "Planeamento do regresso ao trabalho, ao treino ou à competição"
+      faq:
+        - q: "Devo levar exames para a consulta?"
+          a: "Se tiver exames ou relatórios médicos relacionados com a queixa, é útil trazê-los. Nem sempre são necessários exames antes de começar: se a avaliação indicar que podem ser úteis, recomendo que fale com o seu médico."
+        - q: "Devo ficar em repouso enquanto tenho dor?"
+          a: "Depende da situação. Em muitos casos, manter algum movimento, ajustado à tolerância, faz parte da recuperação. Noutros, é necessário reduzir temporariamente a carga. Na avaliação, defino consigo o que deve manter, adaptar ou evitar."
+        - q: "De quantas sessões vou precisar?"
+          a: "Não há um número igual para todos. Depende da condição, do tempo de evolução, dos seus objetivos e da forma como responde à intervenção. Depois da avaliação, explico o que é razoável esperar e vamos reavaliando ao longo do processo."
+        - q: "Posso continuar a treinar?"
+          a: "Sempre que possível, o objetivo é adaptar o treino em vez de o interromper. Ajustamos as cargas, os exercícios e o volume em função dos sintomas e planeamos um regresso progressivo à atividade."
+
+    # ── 2 ── (cartão com destaque visual na página inicial) ────────
+    - id: "atm"
+      highlight: true
+      card_title: "ATM e dor orofacial"
+      card_text: "Dor mandibular, bruxismo, limitação da abertura da boca e tensão cervical associada."
+      title: "ATM e dor orofacial"
+      subtitle: "Dor na mandíbula, bruxismo e limitação da abertura da boca"
+      explanation: >-
+        A articulação temporomandibular (ATM) liga a mandíbula ao crânio e
+        participa em funções como mastigar, falar e bocejar. As disfunções
+        temporomandibulares podem envolver a articulação, os músculos da
+        mastigação e as estruturas vizinhas, e surgem com frequência a par de
+        tensão na região cervical.
+      symptoms:
+        - "Dor na mandíbula, na face ou junto ao ouvido"
+        - "Estalidos na articulação, quando acompanhados de dor ou de limitação"
+        - "Dificuldade ou desconforto ao abrir a boca, mastigar ou bocejar"
+        - "Sensação de bloqueio ou de desvio da mandíbula"
+        - "Apertar ou ranger os dentes (bruxismo), com tensão na face ou no pescoço"
+      assessment: >-
+        A avaliação inclui a história dos sintomas, os hábitos (como apertar
+        os dentes), o sono e os fatores que agravam ou aliviam a queixa. No
+        exame físico, observo a abertura e os movimentos da mandíbula, a
+        articulação e os músculos da mastigação, bem como a coluna cervical.
+        Quando se justifica, a intervenção pode ser articulada com o seu
+        médico dentista ou com outros profissionais de saúde que o acompanham.
+      intervention:
+        - "Terapia manual dirigida à articulação, aos músculos da mastigação e à região cervical"
+        - "Exercícios de mobilidade, coordenação e relaxamento da mandíbula"
+        - "Educação sobre hábitos orais e sobre a posição de repouso da mandíbula"
+        - "Estratégias de autocuidado para o dia a dia"
+      faq:
+        - q: "O bruxismo trata-se com fisioterapia?"
+          a: "O bruxismo tem causas diversas. A fisioterapia não atua sobre todas elas, mas pode ajudar a gerir a dor, a tensão muscular e os hábitos associados. A necessidade de outras medidas, como uma goteira, é avaliada pelo médico dentista."
+        - q: "Os estalidos na mandíbula são motivo de preocupação?"
+          a: "Estalidos sem dor e sem limitação do movimento são comuns e, muitas vezes, não precisam de tratamento. Se forem acompanhados de dor, de bloqueio ou de dificuldade em abrir a boca, justifica-se uma avaliação."
+        - q: "Qual é a relação entre a mandíbula e o pescoço?"
+          a: "A mandíbula e a coluna cervical estão ligadas do ponto de vista muscular e neurológico, e é frequente as queixas surgirem em conjunto. Por isso, a avaliação da ATM inclui também a região cervical."
+        - q: "Já uso goteira. Faz sentido fazer fisioterapia?"
+          a: "Pode fazer. A goteira e a fisioterapia têm objetivos diferentes e podem complementar-se. A avaliação permite perceber se há fatores musculares, articulares ou de hábito em que valha a pena intervir."
+
+    # ── 3 ──────────────────────────────────────────────────────────
+    - id: "cefaleias-tonturas"
+      highlight: false
+      card_title: "Cefaleias e tonturas"
+      card_text: "Quando associadas a fatores cervicais ou músculo-esqueléticos, após avaliação."
+      title: "Cefaleias e tonturas"
+      subtitle: "Quando há fatores cervicais ou músculo-esqueléticos associados"
+      explanation: >-
+        As cefaleias e as tonturas têm muitas causas possíveis, e nem todas
+        são do âmbito da fisioterapia. Em alguns casos, a região cervical, os
+        músculos da cabeça e do pescoço ou a articulação temporomandibular
+        contribuem para os sintomas. É nesses casos, identificados através da
+        avaliação, que a fisioterapia pode ter um papel.
+      symptoms:
+        - "Dor de cabeça acompanhada de dor ou rigidez no pescoço"
+        - "Dor que começa na nuca e se estende à cabeça"
+        - "Sintomas que mudam com certos movimentos ou posições mantidas do pescoço"
+        - "Sensação de instabilidade ou tontura associada a queixas cervicais"
+        - "Tensão na face, na mandíbula ou nos ombros"
+      assessment: >-
+        O primeiro passo é perceber se os sintomas são compatíveis com uma
+        origem músculo-esquelética. Para isso, recolho a história clínica com
+        detalhe, incluindo o padrão, a frequência e os fatores que
+        desencadeiam os sintomas, e avalio a coluna cervical, a musculatura e,
+        quando indicado, a ATM. Se os sintomas sugerirem outra origem, ou se
+        existirem sinais de alerta, recomendo avaliação médica antes de
+        qualquer intervenção.
+      intervention:
+        - "Terapia manual dirigida à região cervical e aos tecidos associados"
+        - "Exercício específico para a mobilidade, a força e o controlo da região cervical"
+        - "Educação sobre fatores desencadeantes e gestão da atividade"
+        - "Articulação com o seu médico, quando necessário"
+      faq:
+        - q: "Todas as dores de cabeça podem ser tratadas com fisioterapia?"
+          a: "Não. Há vários tipos de cefaleia, com origens diferentes. A fisioterapia pode ser útil quando existem fatores cervicais ou músculo-esqueléticos a contribuir para os sintomas, o que só é possível perceber com uma avaliação."
+        - q: "As minhas tonturas vêm do pescoço?"
+          a: "Podem vir ou não. As tonturas têm causas muito variadas, incluindo causas do ouvido interno, cardiovasculares ou neurológicas, que devem ser avaliadas por um médico. Quando essas causas estão esclarecidas e há queixas cervicais associadas, a fisioterapia pode fazer parte do plano."
+        - q: "Quando devo procurar um médico?"
+          a: "Procure avaliação médica urgente perante uma dor de cabeça súbita e muito intensa, diferente do habitual, ou acompanhada de febre, alterações da visão ou da fala, perda de força, dormência, desmaio, ou que surja depois de um traumatismo. Em caso de dúvida, a avaliação médica vem primeiro."
+
+    # ── 4 ──────────────────────────────────────────────────────────
+    - id: "dor-persistente"
+      highlight: false
+      card_title: "Dor persistente e recuperação funcional"
+      card_text: "Limitações nas atividades diárias, educação sobre dor e autogestão."
+      title: "Dor persistente e recuperação funcional"
+      subtitle: "Recuperar capacidade nas atividades do dia a dia"
+      explanation: >-
+        Fala-se de dor persistente quando a dor se mantém para além do tempo
+        habitual de recuperação, em geral mais de três meses. Nestas
+        situações, a dor deixa de refletir apenas o estado de uma estrutura e
+        passa a ser influenciada por vários fatores, como o sono, o stress, o
+        nível de atividade e as experiências anteriores. A intervenção
+        centra-se em recuperar função e em dar à pessoa ferramentas para gerir
+        a sua condição.
+      symptoms:
+        - "Dor que se mantém ou regressa há vários meses"
+        - "Dificuldade em tarefas do dia a dia, no trabalho ou no exercício"
+        - "Cansaço, sono pouco reparador ou menor tolerância ao esforço"
+        - "Receio de que o movimento agrave a dor"
+        - "Perda de confiança no corpo e redução progressiva da atividade"
+      assessment: >-
+        A avaliação procura compreender o percurso da dor, o impacto que tem
+        na sua vida e aquilo que é importante para si recuperar. Além do exame
+        físico, falamos sobre rotinas, sono, atividade e tratamentos
+        anteriores, para identificar os fatores que podem estar a contribuir
+        para a manutenção dos sintomas.
+      intervention:
+        - "Educação sobre a dor e sobre os fatores que a influenciam"
+        - "Exercício terapêutico, com exposição gradual ao movimento e à atividade"
+        - "Terapia manual, quando adequada, integrada num plano ativo"
+        - "Definição de objetivos funcionais e de estratégias de autogestão"
+      faq:
+        - q: "Se os exames não mostram nada, porque é que tenho dor?"
+          a: "A dor é real mesmo quando os exames não mostram alterações. Os exames mostram estruturas, mas a dor depende também da forma como o sistema nervoso processa a informação e de fatores como o sono, o stress e a atividade. Compreender isto faz parte do processo de recuperação."
+        - q: "O movimento pode agravar a minha dor?"
+          a: "Sentir algum desconforto ao retomar o movimento é comum e não significa, por si só, que haja lesão. O plano é construído de forma gradual, respeitando a sua tolerância, para que possa voltar a mover-se com confiança."
+        - q: "A dor vai desaparecer por completo?"
+          a: "Não é possível garantir. Em muitas pessoas a dor diminui; noutras, o ganho principal está em recuperar atividades, autonomia e qualidade de vida. Os objetivos são definidos consigo e revistos ao longo do acompanhamento."
+        - q: "O que significa autogestão?"
+          a: "Significa ter conhecimento e estratégias para lidar com a condição no dia a dia: saber dosear a atividade, reconhecer o que agrava e o que ajuda, e manter um plano de exercício adaptado. O objetivo é ganhar autonomia."
+
+
+# ════════════════════════════════════════════════════════════════════
+#  ABORDAGEM CLÍNICA
+# ════════════════════════════════════════════════════════════════════
+approach:
+  eyebrow: "Abordagem clínica"
+  title: "Uma abordagem individualizada, centrada na pessoa."
+  intro: "Cada pessoa tem uma história, necessidades e objetivos próprios. A intervenção começa por compreender esses fatores e a forma como se relacionam com a condição atual."
+  steps_title: "Quatro etapas"
+  steps:
+    - title: "Escuta e avaliação"
+      text: "Começo por conhecer a sua história clínica, os sintomas, as limitações e os objetivos. Segue-se uma avaliação física adequada à sua situação."
+    - title: "Compreensão da condição"
+      text: "Procuro identificar os fatores que podem contribuir para os sintomas e as funções que precisam de atenção, e explico-lhe o que encontrei de forma clara."
+    - title: "Plano de intervenção"
+      text: "O plano pode combinar terapia manual, técnicas osteopáticas, exercício terapêutico, trabalho de mobilidade e de controlo neuromuscular, e educação sobre dor e movimento."
+    - title: "Acompanhamento e evolução"
+      text: "Ao longo do processo, reavalio, ajusto o plano e acompanho a forma como responde à intervenção."
+  osteopathic:
+    title: "Técnicas osteopáticas"
+    paragraphs:
+      - "As técnicas osteopáticas são técnicas manuais que podem incluir abordagens articulares, miofasciais, cranianas e viscerais."
+      - "Utilizo-as quando são clinicamente adequadas, como complemento da intervenção e sempre integradas no raciocínio clínico que resulta da avaliação. A escolha depende de cada pessoa e de cada situação."
+  closing: "O objetivo é ajudar cada pessoa a recuperar capacidade, autonomia e confiança no movimento."
+  first_visit:
+    title: "Primeira consulta: o que esperar"
+    duration_label: "Duração"
+    price_label: "Valor"
+    bring_label: "O que levar"
+    bring:
+      - "Roupa confortável, que permita mover-se à vontade"
+      - "Exames e relatórios médicos relacionados com a queixa, se os tiver"
+      - "Indicação da medicação que toma habitualmente"
+    how_label: "Como decorre"
+    how: "A consulta começa com uma conversa sobre a sua história clínica, os sintomas e os objetivos. Segue-se a avaliação física. No final, explico o que encontrei, esclareço as suas dúvidas e proponho um plano."
+  button: "Marcar uma avaliação"
+
+
+# ════════════════════════════════════════════════════════════════════
+#  CONTACTOS E MARCAÇÃO
+# ════════════════════════════════════════════════════════════════════
+contact:
+  eyebrow: "Contactos e marcação"
+  title: "Entre em contacto."
+  text: "Envie-me uma mensagem por WhatsApp e indico-lhe o local mais adequado para a sua situação."
+  button: "Marcar por WhatsApp"
+  whatsapp_label: "WhatsApp"
+  email_label: "Em alternativa, por email:"
+  locations_title: "Locais de atendimento"
+  notice: "Por favor, não envie informação clínica detalhada por mensagem. Os detalhes serão tratados na consulta."
+
+
+# ════════════════════════════════════════════════════════════════════
+#  RODAPÉ, COOKIES E OUTROS
+# ════════════════════════════════════════════════════════════════════
+footer:
+  contacts_title: "Contactos"
+  zones_title: "Zonas de atendimento"
+  pages_title: "Páginas"
+  privacy: "Política de Privacidade"
+  cookie_settings: "Preferências de cookies"
+  complaints_book: "Livro de Reclamações"
+  rights: "Todos os direitos reservados."
+
+cookies:
+  label: "Cookies"
+  text: "Este site só utiliza cookies opcionais, para estatísticas de visita e para mostrar conteúdos externos do Google, com o seu consentimento."
+  more: "Saber mais"
+  accept: "Aceitar"
+  reject: "Recusar"
+
+articles:
+  eyebrow: "Artigos"
+  title: "Artigos"
+  intro: "Conteúdos educativos sobre dor, movimento e recuperação funcional."
+  empty: "Ainda não há artigos publicados."
+  read: "Ler artigo"
+  back: "Todos os artigos"
+
+notfound:
+  title: "Página não encontrada"
+  text: "A página que procura não existe ou foi movida."
+  button: "Voltar ao início"

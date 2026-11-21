@@ -1,0 +1,54 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{%- comment %} The number is shown as text only: stop phones turning it into a call link. {% endcomment %}
+<meta name="format-detection" content="telephone=no">
+
+{%- assign seo = t.seo[page.page_id] -%}
+{%- if page.page_id == "article" -%}
+  {%- capture page_title -%}{{ page.title }} | {{ t.identity.name }}{%- endcapture -%}
+  {%- assign page_desc = page.description | default: page.excerpt | strip_html | normalize_whitespace | truncate: 160 -%}
+{%- else -%}
+  {%- assign page_title = seo.title | default: t.meta.site_name -%}
+  {%- assign page_desc = seo.description -%}
+{%- endif -%}
+
+{%- assign noindex = false -%}
+{%- if page.page_id == "notfound" -%}{%- assign noindex = true -%}{%- endif -%}
+{%- if page.page_id == "articles" and lang_articles.size == 0 -%}{%- assign noindex = true -%}{%- endif %}
+
+<title>{{ page_title | escape }}</title>
+<meta name="description" content="{{ page_desc | escape }}">
+{%- if noindex %}
+<meta name="robots" content="noindex">
+{%- else %}
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+{%- assign route = routes[page.page_id] -%}
+{%- if route %}
+<link rel="alternate" hreflang="pt-PT" href="{{ route.pt | absolute_url }}">
+<link rel="alternate" hreflang="en" href="{{ route.en | absolute_url }}">
+<link rel="alternate" hreflang="x-default" href="{{ route.pt | absolute_url }}">
+{%- endif %}
+{%- endif %}
+
+<meta property="og:type" content="{% if page.page_id == 'article' %}article{% else %}website{% endif %}">
+<meta property="og:site_name" content="{{ t.meta.site_name | escape }}">
+<meta property="og:title" content="{{ page_title | escape }}">
+<meta property="og:description" content="{{ page_desc | escape }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:locale" content="{{ t.meta.og_locale }}">
+<meta property="og:locale:alternate" content="{{ site.data[alt_lang].meta.og_locale }}">
+<meta property="og:image" content="{{ '/assets/img/og-image.png' | absolute_url }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="theme-color" content="#FBF8F2">
+<link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
+
+<link rel="preload" href="{{ '/assets/fonts/fraunces-latin-opsz-normal.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ '/assets/fonts/figtree-latin-wght-normal.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M' }}">
+<script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+
+{% include schema.html %}

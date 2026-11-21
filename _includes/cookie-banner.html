@@ -1,0 +1,13 @@
+{%- comment -%}
+  Only rendered when something actually needs consent (Analytics ID or reviews
+  widget filled in settings.yml). Both choices carry the same visual weight.
+{%- endcomment -%}
+{%- if needs_consent %}
+<div class="cookie-banner" role="region" aria-label="{{ t.cookies.label }}" data-cookie-banner hidden>
+  <p>{{ t.cookies.text }} <a href="{{ routes.privacy[lang] | relative_url }}#cookies">{{ t.cookies.more }}</a></p>
+  <div class="cookie-banner__actions">
+    <button type="button" class="btn btn--primary btn--sm" data-consent="reject">{{ t.cookies.reject }}</button>
+    <button type="button" class="btn btn--primary btn--sm" data-consent="accept">{{ t.cookies.accept }}</button>
+  </div>
+</div>
+{%- endif %}

@@ -1,0 +1,42 @@
+# Configuração técnica do site (Jekyll, compilado automaticamente pelo GitHub Pages).
+# Os textos, contactos e fotografias NÃO estão aqui: ver a pasta _data/.
+
+title: "Vasco Oliveira — Fisioterapia e Osteopatia"
+lang: pt-PT
+timezone: Europe/Lisbon
+
+# `url` e `baseurl` ficam de propósito por definir: o GitHub Pages preenche-os
+# sozinho (endereço github.io agora, domínio próprio depois de configurado).
+# Se alguma vez for preciso forçar o endereço, descomentar e ajustar:
+# url: "https://www.exemplo.pt"
+# baseurl: ""
+
+markdown: kramdown
+permalink: pretty
+
+collections:
+  articles:
+    output: true
+
+defaults:
+  - scope:
+      path: "_articles/pt"
+    values:
+      layout: article
+      lang: pt
+      page_id: article
+      permalink: "/artigos/:name/"
+  - scope:
+      path: "_articles/en"
+    values:
+      layout: article
+      lang: en
+      page_id: article
+      permalink: "/en/articles/:name/"
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules

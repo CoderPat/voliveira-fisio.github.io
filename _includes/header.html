@@ -1,0 +1,35 @@
+{%- assign nav_ids = "home,about,areas,approach,contact" | split: "," -%}
+{%- assign switch_route = routes[page.page_id] | default: routes.home -%}
+{%- if page.page_id == "article" -%}{%- assign switch_route = routes.home -%}{%- endif -%}
+<header class="site-header" data-header>
+  <div class="container site-header__inner">
+    <a class="brand" href="{{ routes.home[lang] | relative_url }}">{{ t.identity.name }}</a>
+
+    <nav class="site-nav" id="menu" aria-label="{{ t.ui.main_nav }}">
+      <ul class="site-nav__list" role="list">
+        {%- for id in nav_ids %}
+        <li><a href="{{ routes[id][lang] | relative_url }}"{% if page.page_id == id %} aria-current="page"{% endif %}>{{ t.nav[id] }}</a></li>
+        {%- endfor %}
+        {%- comment %} The articles link appears by itself once at least one article is published in this language. {% endcomment %}
+        {%- if lang_articles.size > 0 %}
+        <li><a href="{{ routes.articles[lang] | relative_url }}"{% if page.page_id == "articles" or page.page_id == "article" %} aria-current="page"{% endif %}>{{ t.nav.articles }}</a></li>
+        {%- endif %}
+      </ul>
+      <a class="btn btn--primary site-nav__cta" href="{{ wa_url }}" target="_blank" rel="noopener">{% include icon.html name="whatsapp" %}{{ t.nav.cta }}</a>
+    </nav>
+
+    <div class="site-header__actions">
+      <div class="lang-switch" role="group" aria-label="{{ t.ui.language }}">
+        <a href="{{ switch_route.pt | relative_url }}" lang="pt-PT" hreflang="pt-PT"{% if lang == "pt" %} aria-current="true"{% endif %}><abbr title="Português">PT</abbr></a>
+        <span aria-hidden="true">/</span>
+        <a href="{{ switch_route.en | relative_url }}" lang="en" hreflang="en"{% if lang == "en" %} aria-current="true"{% endif %}><abbr title="English">EN</abbr></a>
+      </div>
+      <a class="btn btn--primary btn--sm header-cta" href="{{ wa_url }}" target="_blank" rel="noopener">{{ t.nav.cta }}</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" data-nav-toggle>
+        <span class="visually-hidden">{{ t.ui.menu }}</span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</header>

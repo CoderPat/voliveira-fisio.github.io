@@ -1,0 +1,59 @@
+{%- assign nav_ids = "home,about,areas,approach,contact" | split: "," -%}
+{%- assign regulator = s.legal.regulator[lang] -%}
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div class="site-footer__brand">
+        <p class="site-footer__name">{{ t.identity.name }} <span>— {{ t.identity.tagline }}</span></p>
+        <p>{{ t.identity.designation }}<br>{{ t.identity.license }}</p>
+      </div>
+
+      <div>
+        <h2 class="site-footer__title">{{ t.footer.contacts_title }}</h2>
+        <ul role="list">
+          <li><a href="{{ wa_url }}" target="_blank" rel="noopener">WhatsApp</a> <span class="site-footer__muted">{{ s.whatsapp_display }}</span></li>
+          {%- if has_email %}
+          <li><a href="mailto:{{ s.email }}">{{ s.email }}</a></li>
+          {%- endif %}
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="site-footer__title">{{ t.footer.zones_title }}</h2>
+        <ul role="list">
+          {%- for place in t.locations.items %}
+          <li>{{ place.name }} <span class="site-footer__muted">({{ place.zone }})</span></li>
+          {%- endfor %}
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="site-footer__title">{{ t.footer.pages_title }}</h2>
+        <ul role="list">
+          {%- for id in nav_ids %}
+          <li><a href="{{ routes[id][lang] | relative_url }}">{{ t.nav[id] }}</a></li>
+          {%- endfor %}
+          {%- if lang_articles.size > 0 %}
+          <li><a href="{{ routes.articles[lang] | relative_url }}">{{ t.nav.articles }}</a></li>
+          {%- endif %}
+        </ul>
+      </div>
+    </div>
+
+    <div class="site-footer__bottom">
+      <p>© {{ site.time | date: "%Y" }} {{ t.identity.name }}. {{ t.footer.rights }}</p>
+      <ul role="list">
+        <li><a href="{{ routes.privacy[lang] | relative_url }}">{{ t.footer.privacy }}</a></li>
+        {%- if needs_consent %}
+        <li><button type="button" class="link-button" data-cookie-settings>{{ t.footer.cookie_settings }}</button></li>
+        {%- endif %}
+        {%- if s.legal.complaints_book_url and s.legal.complaints_book_url != "" %}
+        <li><a href="{{ s.legal.complaints_book_url }}" target="_blank" rel="noopener">{{ t.footer.complaints_book }}</a></li>
+        {%- endif %}
+      </ul>
+      {%- if regulator and regulator != "" %}
+      <p class="site-footer__legal">{{ regulator }}</p>
+      {%- endif %}
+    </div>
+  </div>
+</footer>

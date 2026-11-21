@@ -1,0 +1,30 @@
+---
+layout: default
+---
+{%- include vars.html -%}
+<section class="page-hero">
+  <div class="container">
+    <h1>{{ t.articles.title }}</h1>
+    <p class="page-hero__intro">{{ t.articles.intro }}</p>
+  </div>
+</section>
+
+<section class="section section--flush-top">
+  <div class="container">
+    {%- if lang_articles.size > 0 %}
+    <ul class="article-list" role="list">
+      {%- for article in lang_articles %}
+      <li class="article-card">
+        <h2 class="article-card__title"><a href="{{ article.url | relative_url }}">{{ article.title }}</a></h2>
+        {%- if article.description %}
+        <p>{{ article.description }}</p>
+        {%- endif %}
+        <span class="card__more" aria-hidden="true">{{ t.articles.read }}{% include icon.html name="arrow" %}</span>
+      </li>
+      {%- endfor %}
+    </ul>
+    {%- else %}
+    <p>{{ t.articles.empty }}</p>
+    {%- endif %}
+  </div>
+</section>

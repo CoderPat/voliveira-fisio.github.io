@@ -1,0 +1,72 @@
+---
+layout: default
+---
+{%- include vars.html -%}
+<section class="page-hero">
+  <div class="container">
+    <h1>{{ t.areas.title }}</h1>
+    <p class="page-hero__intro">{{ t.areas.intro }}</p>
+    <p class="note">{% include icon.html name="info" %}<span><strong>{{ t.areas.note_title }}.</strong> {{ t.areas.note }}</span></p>
+    <nav class="jump" aria-label="{{ t.ui.on_this_page }}">
+      <ul role="list">
+        {%- for item in t.areas.items %}
+        <li><a href="#{{ item.id }}"><span aria-hidden="true">0{{ forloop.index }}</span>{{ item.title }}</a></li>
+        {%- endfor %}
+      </ul>
+    </nav>
+  </div>
+</section>
+
+{%- for item in t.areas.items %}
+<section class="area" id="{{ item.id }}" aria-labelledby="{{ item.id }}-title">
+  <div class="container area__grid">
+    <div class="area__intro">
+      <p class="area__num" aria-hidden="true">0{{ forloop.index }}</p>
+      <h2 class="area__title" id="{{ item.id }}-title">{{ item.title }}</h2>
+      <p class="area__subtitle">{{ item.subtitle }}</p>
+      <p>{{ item.explanation }}</p>
+      <a class="btn btn--primary" href="{{ wa_url }}" target="_blank" rel="noopener">{% include icon.html name="whatsapp" %}{{ t.ui.whatsapp_cta }}</a>
+    </div>
+
+    <div class="area__detail">
+      <div class="area__block">
+        <h3>{{ t.areas.labels.symptoms }}</h3>
+        <ul class="ticks" role="list">
+          {%- for symptom in item.symptoms %}
+          <li>{{ symptom }}</li>
+          {%- endfor %}
+        </ul>
+      </div>
+
+      <div class="area__block">
+        <h3>{{ t.areas.labels.assessment }}</h3>
+        <p>{{ item.assessment }}</p>
+      </div>
+
+      <div class="area__block">
+        <h3>{{ t.areas.labels.intervention }}</h3>
+        <p>{{ t.areas.labels.intervention_intro }}</p>
+        <ul class="ticks" role="list">
+          {%- for component in item.intervention %}
+          <li>{{ component }}</li>
+          {%- endfor %}
+        </ul>
+      </div>
+
+      <div class="area__block">
+        <h3>{{ t.areas.labels.faq }}</h3>
+        <div class="faq">
+          {%- for entry in item.faq %}
+          <details>
+            <summary>{{ entry.q }}</summary>
+            <p class="faq__answer">{{ entry.a }}</p>
+          </details>
+          {%- endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{%- endfor %}
+
+{% include cta.html %}

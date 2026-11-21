@@ -1,0 +1,13 @@
+{%- comment %} Location cards: area only, never a street address, map or call button. {% endcomment -%}
+<ul class="locations" role="list">
+  {%- for place in t.locations.items %}
+  <li class="location">
+    <p class="location__zone">{% include icon.html name="pin" %}{{ place.zone }}</p>
+    <h3 class="location__name">{{ place.name }}</h3>
+    <p class="location__note">{{ t.locations.note }}</p>
+    {%- if include.buttons %}
+    <a class="btn btn--ghost" href="{{ wa_url }}" target="_blank" rel="noopener">{% include icon.html name="whatsapp" %}{{ t.ui.whatsapp_cta }}</a>
+    {%- endif %}
+  </li>
+  {%- endfor %}
+</ul>

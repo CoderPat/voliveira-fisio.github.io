@@ -1,0 +1,15 @@
+---
+layout: default
+---
+{%- include vars.html -%}
+<article class="page-hero page-hero--prose">
+  <div class="container">
+    <div class="prose">
+      <p class="eyebrow"><a href="{{ routes.articles[lang] | relative_url }}">{{ t.articles.back }}</a></p>
+      <h1>{{ page.title }}</h1>
+{{ content }}
+    </div>
+  </div>
+</article>
+
+{% include cta.html %}

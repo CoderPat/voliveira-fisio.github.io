@@ -1,0 +1,10 @@
+{%- comment %} Closing call to action, shared by every page. Text lives in home.cta. {% endcomment -%}
+<section class="section section--cta" aria-labelledby="cta-title">
+  <div class="container">
+    <div class="cta-panel">
+      <h2 id="cta-title">{{ t.home.cta.title }}</h2>
+      <p>{{ t.home.cta.text }}</p>
+      <a class="btn btn--light btn--lg" href="{{ wa_url }}" target="_blank" rel="noopener">{% include icon.html name="whatsapp" %}{{ include.button | default: t.home.cta.button }}</a>
+    </div>
+  </div>
+</section>
